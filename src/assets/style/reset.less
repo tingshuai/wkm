@@ -1,0 +1,249 @@
+//公共样式
+blockquote,
+body,
+button,
+center,
+dd,
+div,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+li,
+ol,
+p,
+td,
+textarea,
+th,
+tr,
+ul {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+  min-width: 1280px;
+  max-height: 100vh;
+}
+body {
+  // user-select: none;
+  background-color: white;
+}
+article,
+aside,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset,
+img {
+  border: 0;
+}
+button,
+input,
+select,
+textarea {
+  font-size: 12px;
+}
+img,
+input,
+select {
+  vertical-align: middle;
+}
+li,
+ul {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+//
+.effect {
+  position: relative;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.effect:after,
+.effect:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  bottom: 0px;
+  left: 20px;
+  right: 20px;
+  border-radius: 100px/10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  z-index: -2;
+}
+
+//tab样式
+
+//  background: #EFF2F4;
+//  margin-left: 14px;
+
+//  margin-left: 16px;
+//  color: #A1A1A1;
+.el-tabs__nav-scroll {
+  overflow: hidden;
+    height: 50px;
+    background: #dee3e8;
+    position: relative;
+    border-radius: 4px 4px 0 0;
+}
+.el-tabs--border-card {
+  border: none;
+  box-shadow: none;
+  position: relative;
+}
+.el-table{
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+}
+.el-tabs.el-tabs--top.el-tabs--border-card {
+  // overflow-y: auto;
+}
+.el-tabs__nav {
+  margin-left: 40px;
+  margin-top: 10px;
+  border-radius: 51px;
+}
+.el-tabs--bottom .el-tabs--left .el-tabs__item:last-child,
+.el-tabs--bottom .el-tabs--right .el-tabs__item:last-child,
+.el-tabs--bottom.el-tabs--border-card .el-tabs__item:last-child,
+.el-tabs--bottom.el-tabs--card .el-tabs__item:last-child,
+.el-tabs--top .el-tabs--left .el-tabs__item:last-child,
+.el-tabs--top .el-tabs--right .el-tabs__item:last-child,
+.el-tabs--top.el-tabs--border-card .el-tabs__item:last-child,
+.el-tabs--top.el-tabs--card .el-tabs__item:last-child {
+  border-radius: 4px 4px 0 0;
+  //   color: #000;
+}
+.el-tabs--border-card > .el-tabs__header .el-tabs__item.is-active {
+  border-radius: 4px 4px 0 0;
+  color: #000;
+  margin: 0 8px;
+}
+.el-tabs--border-card > .el-tabs__header .el-tabs__item {
+  background: #eff2f4;
+  margin: 0 8px;
+  color: #a1a1a1;
+}
+.el-tabs__content {
+  min-height: 680px;
+  border: 1px solid #dee3e8;
+  padding: 0!important;
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  top: 48px;
+  overflow: hidden;
+}
+.el-form-item__label{
+  width: auto!important;
+}
+.el-tabs--border-card{
+  position: relative;
+    width: 100%;
+    height: 100%;
+  > .el-tabs__header
+  .el-tabs__item:not(.is-disabled):hover {
+  color: #000;
+
+  }
+}
+.el-tab-pane{
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.el-form-item{
+  height: auto!important;
+  margin:0 10px 10px 10px!important;
+}
+.el-tabs--border-card > .el-tabs__header .el-tabs__item:not(.is-active):hover {
+  color: #a1a1a1;
+}
+.el-tabs--border-card>.el-tabs__header {
+  background-color: #f5f7fa;
+  border-bottom: 1px solid #e4e7ed;
+  margin: 0;
+  width: 100%;
+  height: 50px;
+  display: inline-block;
+}
+.productLibrary{
+  padding: 20px 20px 0 20px;
+  position: absolute;
+  top: 50px;
+  bottom: 0px;
+  width: 100%;
+}
+.myTable {
+  .el-button--text {
+    color: #000000;
+  }
+  .el-input-number.is-without-controls .el-input__inner {
+    text-align: left;
+  }
+  .el-button--text:focus,
+  .el-button--text:hover {
+    color: #1d03b1;
+  }
+}
+// .el-form-item{
+//   height:36px;
+// }
+.el-tabs__nav-wrap {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+.el-table__body-wrapper {
+  overflow-y: auto;
+    min-height: 300px;
+    position: absolute;
+    top: 48px;
+    bottom: 50px;
+    width: 100%;
+    border-bottom: 1px solid #dee3e8;
+}
+.poc-toast .el-table__body-wrapper {
+  max-height: 250px;
+  min-height: auto;
+  overflow-y: auto;
+}
