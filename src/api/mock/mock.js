@@ -8,16 +8,15 @@ Mock.setup({
 //下拉菜单
 Mock.mock('/simpleSelect/getData', 'post', function(options){
     let params = parseQuery(options.body);
-    console.log(params)
      switch(params.name){
          case 'stoProtery'://仓库属性
          return {
-                message: "请求成功",
-                model: [{label: "物料",value: '物料'},
-                        {label: "成品",value: "成品"},
-                        {label: "半成品",value: "半成品"}],
-                result: true
-            }
+             message: "请求成功",
+             model: [{label: "物料",value: '物料'},
+                     {label: "成品",value: "成品"},
+                     {label: "半成品",value: "半成品"}],
+             result: true
+         }
          case 'stoStatus'://仓库状态
          return {
             message: "请求成功",
